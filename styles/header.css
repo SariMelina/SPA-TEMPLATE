@@ -1,0 +1,90 @@
+header {
+    margin: auto;
+    padding: 0px;
+    margin-top: 10px;
+    max-width: 1200px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header figure {
+    max-width: 150px;
+}
+header figure img{
+    width: 100%;
+}
+header .iconos *{
+    font-size: 40px;
+    color: var(--black-color);
+    margin-right: 10px;
+}
+header nav {border: var(--black-color) 3px solid;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+header nav a{    
+    font-family: var(--font-super-bold);
+    font-size: 15px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+.promociones {
+    margin-top: 20px;
+    background-image: url('../imagenes/fondopiedras.jpg');
+    background-size: cover;
+}
+.promociones .limite {
+    margin: auto;
+    padding: 100px 0px;
+    max-width: 1200px;
+    color: var(--back-color);
+    text-align: center;
+}
+.promociones h1 {
+    font-family: var(--font-super-bold);
+}
+.promociones h3 { 
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: var(--font-light);
+}
+.promociones .botones {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    gap: 25px;  
+}
+@media(max-width:450px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {border: var(--black-color) 3px solid;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        padding: 5px 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    header nav a{
+        border-bottom: var(--black-color) 1px dotted;
+        padding: 5px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .promociones h1 {
+        margin-left: 18px;
+        margin-right: 5px;        
+        text-align: left;
+        font-family: var(--font-super-bold);
+    }
+}

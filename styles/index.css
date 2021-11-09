@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Lato-SuperLight";
+    src: url('../fonts/Lato-Thin.ttf');
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url('../fonts/Lato-Light.ttf');
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: "Lato-SuperBold";
+    src: url('../fonts/Lato-Black.ttf');
+}
+:root {
+    /*      FONTS       */
+    --font-super-light: "Lato-SuperLight", sans-serif;
+    --font-light: "Lato-Light", sans-serif;
+    --font-regular: "Lato-Regular", sans-serif;
+    --font-bold: "Lato-Bold", sans-serif;
+    --font-super-bold: "Lato-SuperBold", sans-serif;
+    /*      COLORS       */
+    --back-color: #FDF9EF;
+    --pink-color: #E2317B;
+    --black-color: #000000;
+    --card-color: #F2DEA0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    padding: 0px;
+    background-color: var(--back-color);
+    font-family: var(--font-regular);
+    border-top: var(--pink-color) 10px solid;
+}
+.boton {
+    background-color: var(--pink-color);
+    color: var(--back-color);
+    text-decoration: none;
+    padding: 20px 25px;
+}
+.boton:hover {
+    border: var(--pink-color) 4px solid;
+    background-color: transparent;
+    color: var(--back-color);
+    text-decoration: none;
+    padding: 16px 21px;
+}

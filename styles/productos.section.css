@@ -1,0 +1,33 @@
+.productos {
+    padding: 20px 20px;
+    margin: auto;
+    max-width: 1200px;
+    background-color: white;    
+    display: flex;
+    justify-content: space-between;
+}
+.productos h2 {
+    font-size: 20px;
+    font-family: var(--font-super-bold);
+}
+.productos p {
+    max-width: 600px;
+    line-height: 35px;
+}
+.productos figure {
+    max-width: 400px;
+}
+.productos figure img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+@media(max-width:450px){
+    .productos {
+        padding: 20px 20px;
+        margin: auto;
+        max-width: 1200px;
+        background-color: white;    
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

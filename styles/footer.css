@@ -1,0 +1,29 @@
+footer {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1200px;
+    border-bottom: var(--pink-color) solid 10px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer figure img {
+    margin: auto;
+    max-width: 120px;
+}
+footer figure img{
+    width: 100%;
+}
+footer p{
+    font-size: 13px;
+    font-family: var(--font-bold);
+    color:var(--pink-color);
+    margin-bottom: 20px;
+}
+@media(max-width:450px){
+    footer {
+        border-bottom: var(--pink-color) 10px; 
+    }
+}
